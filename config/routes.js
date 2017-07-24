@@ -34,6 +34,13 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  'get /about':{
+    view: 'pages/about',
+    locals: {
+      layout: 'layout-about.ejs'
+    }
   }
 
   /***************************************************************************
