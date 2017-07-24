@@ -46,14 +46,14 @@ module.exports.routes = {
   'get /login':{
     view: 'pages/login',
     locals: {
-      layout: 'layout.ejs'
+      layout: 'layout-auth.ejs'
     }
   },
 
   'get /signup':{
     view: 'pages/signup',
     locals: {
-      layout: 'layout.ejs'
+      layout: 'layout-auth.ejs'
     }
   }
 
