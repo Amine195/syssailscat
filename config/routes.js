@@ -32,30 +32,43 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  '/': 'HomeController.index',
 
-  'get /about':{
-    view: 'pages/about',
-    locals: {
-      layout: 'layout-about.ejs'
-    }
-  },
+  'get /g/login': 'HomeController.login',
 
-  'get /login':{
-    view: 'pages/login',
-    locals: {
-      layout: 'layout-auth.ejs'
-    }
-  },
+  //'/g/login': 'AuthController.login',
 
-  'get /signup':{
-    view: 'pages/signup',
-    locals: {
-      layout: 'layout-auth.ejs'
-    }
-  }
+  'get /g/signup': 'HomeController.signup',
+
+  //'/g/signup': 'AuthController.signup',
+
+  'get /about': 'HomeController.about',
+
+
+  // '/': {
+  //   view: 'homepage'
+  // },
+
+  // 'get /about':{
+  //   view: 'pages/about',
+  //   locals: {
+  //     layout: 'layout-about.ejs'
+  //   }
+  // },
+
+  // 'get /login':{
+  //   view: 'pages/login',
+  //   locals: {
+  //     layout: 'layout-auth.ejs'
+  //   }
+  // },
+
+  // 'get /signup':{
+  //   view: 'pages/signup',
+  //   locals: {
+  //     layout: 'layout-auth.ejs'
+  //   }
+  // }
 
   /***************************************************************************
   *                                                                          *
