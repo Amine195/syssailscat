@@ -52,6 +52,20 @@ module.exports = {
         slug: req.user.slug
       });
     }
+  },
+
+  // The Login Page
+  login: function(req, res) {
+    return res.view('pages/login', {
+      layout: 'layout'
+    });
+  },
+
+  // The Signup Page
+  signup: function(req, res) {
+    return res.view('pages/signup', {
+      layout: 'layout'
+    });
   }
 
 };
