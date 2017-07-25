@@ -19,7 +19,7 @@
                 error += errors[0].message;
                 error += '</div>';
 
-                $('input[name= "' + name '"' )
+                $('input[name= ' + name )
                 .filter(function(index, el){
                   var type = el.getAttribute('type');
                     if (type != "checkbox") {
